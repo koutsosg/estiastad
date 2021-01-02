@@ -6,12 +6,13 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import MyForm from "../components/myform"
 import Welcome from "../components/welcome"
-
+import About from "../components/about"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
      <Cover />
      <Welcome />
+     <About />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
      
       <Image />
