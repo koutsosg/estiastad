@@ -13,9 +13,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat`,
+          `source sans pro\:100,200,300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-plugin-fontawesome-css`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
