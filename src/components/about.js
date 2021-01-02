@@ -13,7 +13,7 @@ padding: 5vh;
 `
 const Header = styled.h2`
 color: #ffffff;
-font-size: 2vw;
+font-size: 2.5vw;
 margin: 0 0 20px 0;
 @media (max-width: 768px) {
 font-size: 6vw;
@@ -29,23 +29,24 @@ font-size: 6vw;
 `
 const Paragraph = styled.p`
 color: #ffffff;
+text-align: justify;
 font-size: 1.5vw;
 margin: 0 0 60px 0;
  margin: 0 auto;
         max-Width: 780px;
         padding: 1.45rem 1.0875rem;
 @media (max-width: 768px) {
-font-size: 2vw;
+font-size: 2.5vw;
 }
 `
 
 const CallButton = styled.a`
-color: black;
+color: #ffffff;
 cursor: pointer;
 border-radius: 20vh;
 border-style: solid;
-background-color: #9a998e;
-border-color: #000000;
+background-color: #505554;
+border-color: #ffffff;
 border-width: 1px;
 padding: 1vh;
 font-size: 1.5vw;
@@ -54,8 +55,8 @@ font-size: 3vw;
 }
 
 :hover {
-    background-color: #000000;
-    color: #9a998e;
+    background-color: #ffffff;
+    color: #000000;
     transition: all 0.3s ease-in;
 }
 `

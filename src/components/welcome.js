@@ -11,7 +11,7 @@ padding: 5vh;
 }
 `
 const Header = styled.h1`
-color: #505554;
+color: #000000;
 font-size: 4vw;
 margin: 0 0 20px 0;
 @media (max-width: 768px) {
@@ -21,10 +21,10 @@ font-size: 6vw;
 `
 const Paragraph = styled.p`
 color: #000000;
-font-size: 1.5vw;
+font-size: 2vw;
 margin: 0 0 60px 0;
 @media (max-width: 768px) {
-font-size: 2vw;
+font-size: 6vw;
 }
 `
 
