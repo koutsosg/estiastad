@@ -7,7 +7,7 @@ const Footer = () => (
    <footer style={{
       marginTop: `2rem`,
       background: `black`,
-      marginBottom: `1.45rem`,
+   
       color: `white`,
        textDecoration: `none`,
      
