@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-
+import AboutImg from "./about-img"
 const AboutSection = styled.div`
   background-color: #505554;
   text-align: center;
-  padding: 11vh;
+  padding: 5vh;
   color: white;
 
   @media (max-width: 768px) {
@@ -15,6 +15,7 @@ const Header = styled.h2`
   color: #ffffff;
   font-size: 2.5vw;
   margin: 0 0 20px 0;
+  padding: 20px 0 0 0;
   @media (max-width: 768px) {
     font-size: 6vw;
   }
@@ -39,30 +40,10 @@ const Paragraph = styled.p`
   }
 `
 
-const CallButton = styled.a`
-  color: #ffffff;
-  cursor: pointer;
-  border-radius: 20vh;
-  border-style: solid;
-  background-color: #505554;
-  border-color: #ffffff;
-  border-width: 1px;
-  padding: 1vh;
-  font-size: 1.5vw;
-  @media (max-width: 768px) {
-    font-size: 3vw;
-  }
-
-  :hover {
-    background-color: #ffffff;
-    color: #000000;
-    transition: all 0.3s ease-in;
-  }
-`
-
 const About = () => {
   return (
     <AboutSection>
+      <AboutImg />
       <Header>About</Header>
       <Header2>Honest & Efficient Work</Header2>
       <Paragraph>
@@ -73,7 +54,6 @@ const About = () => {
         provide open communication channels throughout the duration of each
         project.
       </Paragraph>
-      <CallButton href="tel:+0046732570047">Get In Touch</CallButton>
     </AboutSection>
   )
 }

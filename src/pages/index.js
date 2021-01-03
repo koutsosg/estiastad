@@ -6,18 +6,16 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Welcome from "../components/welcome"
 import About from "../components/about"
-import Services from "../components/services/services"
+import Services from "../components/services"
 import InfoCard from "../components/info-card"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-     <Cover />
-     <Welcome />
-     <About />
+    <Cover />
+    <Welcome />
+    <About />
     <Services />
     <InfoCard />
-    
-   
   </Layout>
 )
 
