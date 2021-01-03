@@ -2,15 +2,16 @@ import React from "react"
 import FloorClean from "./floor"
 import HouseClean from "./house"
 import WallClean from "./wall"
+import Head from "./head"
 
 const Services = () => {
-    return(
-        <div>
-        <h1>services</h1>
-        <HouseClean />
-        <FloorClean />
-        <WallClean />
-        </div>
-    )
+  return (
+    <div>
+      <Head />
+      <HouseClean />
+      <FloorClean />
+      <WallClean />
+    </div>
+  )
 }
 export default Services

@@ -3,13 +3,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Cover = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "welcome.webp" }) {
         childImageSharp {
-          fluid(maxWidth: 1263, maxHeight: 400) {
+          fluid(maxWidth: 1903, maxHeight: 700) {
             ...GatsbyImageSharpFluid_withWebp
-            
           }
         }
       }
@@ -20,13 +19,7 @@ const Cover = () => {
     return <div>Picture not found</div>
   }
 
-  return (
-
-  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
- 
-
-  )
-  
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default Cover
