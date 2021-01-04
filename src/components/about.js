@@ -17,6 +17,7 @@ const Header = styled.h2`
   margin: 0 0 20px 0;
   padding: 20px 0 0 0;
   @media (max-width: 768px) {
+    padding: 0;
     font-size: 6vw;
   }
 `
@@ -31,12 +32,12 @@ const Paragraph = styled.p`
   color: #ffffff;
   text-align: justify;
   font-size: 1vw;
-  margin: 0 0 60px 0;
+
   margin: 0 auto;
   max-width: 1080px;
-  padding: 1.45rem 1.0875rem;
+
   @media (max-width: 768px) {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 `
 

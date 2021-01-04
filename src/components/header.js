@@ -1,12 +1,18 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const Title = styled.h1`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `black`,
-  
     }}
   >
     <div
@@ -16,7 +22,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <Title style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,7 +32,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </Title>
     </div>
   </header>
 )

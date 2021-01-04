@@ -6,6 +6,10 @@ const ServiceContainer = styled.div`
   position: relative;
   text-align: center;
   color: white;
+
+  @media (max-width: 768px) {
+    padding: 1vh;
+  }
 `
 const Text = styled.div`
   position: absolute;
@@ -14,10 +18,9 @@ const Text = styled.div`
   transform: translate(-50%, -50%);
   font-size: 2vw;
 
-
   @media (max-width: 768px) {
-font-size: 6vw;
-
+    font-size: 6vw;
+  }
 `
 const Head = () => {
   return (

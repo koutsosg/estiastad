@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `estia`,
+    title: `estia städ ab`,
     description: `Fast, efficient, and honest, estia städ has become a reputable and well-known service provider.`,
     author: `@ohmygad`,
   },
@@ -13,15 +13,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-     {
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `Montserrat`,
-          `source sans pro\:100,200,300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:100,200,300,400,400i,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     `gatsby-plugin-fontawesome-css`,
     `gatsby-transformer-sharp`,
@@ -41,6 +41,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-     `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

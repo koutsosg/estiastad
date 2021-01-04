@@ -6,8 +6,10 @@ import Img from "gatsby-image"
 const WallImage = styled(Img)`
   min-width: 50%;
   float: left;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
-
 const WallImg = () => {
   const data = useStaticQuery(graphql`
     query {

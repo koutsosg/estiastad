@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Social from "./social"
 
 const Footer = () => (
   <footer
@@ -20,7 +19,7 @@ const Footer = () => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <Social />© {new Date().getFullYear()},
+      © {new Date().getFullYear()},
       <Link
         to="/"
         style={{
@@ -28,9 +27,9 @@ const Footer = () => (
           textDecoration: `none`,
         }}
       >
-        Estia städ AB
+        &nbsp;Estia städ AB
       </Link>
-      .All Rights Reserved
+      .&nbsp;All Rights Reserved
     </div>
   </footer>
 )

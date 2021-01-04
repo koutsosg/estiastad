@@ -5,9 +5,11 @@ import Img from "gatsby-image"
 
 const FloorService = styled(Img)`
   min-width: 50%;
-  flex-grow: 1;
+  float: left;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
-
 const FloorImg = () => {
   const data = useStaticQuery(graphql`
     query {

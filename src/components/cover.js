@@ -1,6 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from "styled-components"
+const CoverCss = styled(Img)`
+  @media (max-width: 768px) {
+    min-height: 35vh;
+  }
+`
 
 const Cover = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +25,9 @@ const Cover = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <CoverCss fluid={data.placeholderImage.childImageSharp.fluid}></CoverCss>
+  )
 }
 
 export default Cover

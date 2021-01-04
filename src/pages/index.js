@@ -11,7 +11,7 @@ import InfoCard from "../components/info-card"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Cover />
+
     <Welcome />
     <About />
     <Services />

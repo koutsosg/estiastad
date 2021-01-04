@@ -4,7 +4,18 @@ import FloorImg from "../services/floor-img"
 
 const FloorText = styled.div`
   background-color: #9a998e;
-  float: left;
+  width: 50%;
+  float: right;
+  flex-grow: 1;
+
+  @media (max-width: 768px) {
+    float: left;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    min-height: 100%;
+    padding: 5% 0;
+  }
 `
 
 const FloorSection = styled.div`
@@ -13,24 +24,26 @@ const FloorSection = styled.div`
   text-align: center;
   padding: 1vh;
   color: white;
-
   @media (max-width: 768px) {
-    padding: 5vh;
+    padding: 1vh;
   }
 `
 
 const FloorHeader = styled.h3`
 color: #ffffff;
-font-size: 2vw;
+font-size: 1.5vw;
+padding: 0 0;
+
 @media (max-width: 768px) {
-font-size: 6vw;
+font-size: 4.5vw;
 
 `
 const FloorParagraph = styled.p`
   color: #ffffff;
   text-align: justify;
-  font-size: 1.5vw;
-  padding: 0 10%;
+  font-size: 1vw;
+  padding: 0 5%;
+
   @media (max-width: 768px) {
     font-size: 2.5vw;
   }
@@ -38,15 +51,18 @@ const FloorParagraph = styled.p`
 const FloorClean = () => {
   return (
     <FloorSection>
-      <FloorText>
-        <FloorHeader>FLOOR CLEANING</FloorHeader>
-        <FloorParagraph>
-          We have the experience and skills necessary to tackle just about every
-          type of job that comes our way. With estia städ, clients know exactly
-          what to expect - professionalism, efficiency and exceptional results.
-        </FloorParagraph>
-      </FloorText>
-      <FloorImg />
+      <div>
+        <FloorImg />
+        <FloorText>
+          <FloorHeader>Floor Cleaning</FloorHeader>
+          <FloorParagraph>
+            Since its founding, estia städ has been one of the most trusted
+            names in the industry. Hire us for this service and learn how we
+            cater to the needs of each client, ensuring the results you need and
+            deserve.
+          </FloorParagraph>
+        </FloorText>
+      </div>
     </FloorSection>
   )
 }

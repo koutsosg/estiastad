@@ -6,6 +6,9 @@ import Img from "gatsby-image"
 const HouseImage = styled(Img)`
   min-width: 50%;
   float: left;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const HouseImg = () => {

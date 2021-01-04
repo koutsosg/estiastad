@@ -7,6 +7,9 @@ const AboutImage = styled(Img)`
   border-radius: 50%;
   display: block;
   margin: auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const AboutImg = () => {
@@ -14,7 +17,7 @@ const AboutImg = () => {
     query {
       about: file(relativePath: { eq: "about.webp" }) {
         childImageSharp {
-          fluid(maxWidth: 300, maxHeight: 300) {
+          fluid(maxWidth: 200, maxHeight: 200) {
             ...GatsbyImageSharpFluid
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
