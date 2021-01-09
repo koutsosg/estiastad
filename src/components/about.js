@@ -1,6 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import AboutImg from "./about-img"
+import React from "react";
+import styled from "styled-components";
+import AboutImg from "./about-img";
+import { Trans } from "gatsby-plugin-react-i18next";
 const AboutSection = styled.div`
   background-color: #505554;
   text-align: center;
@@ -10,7 +11,7 @@ const AboutSection = styled.div`
   @media (max-width: 768px) {
     padding: 5vh;
   }
-`
+`;
 const Header = styled.h2`
   color: #ffffff;
   font-size: 2.5vw;
@@ -20,14 +21,14 @@ const Header = styled.h2`
     padding: 0;
     font-size: 6vw;
   }
-`
+`;
 const Header2 = styled.p`
 color: #ffffff;
 font-size: 1.5vw;
 @media (max-width: 768px) {
 font-size: 6vw;
 
-`
+`;
 const Paragraph = styled.p`
   color: #ffffff;
   text-align: justify;
@@ -39,24 +40,30 @@ const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 3vw;
   }
-`
+`;
 
 const About = () => {
   return (
-    <AboutSection>
+    <AboutSection data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <AboutImg />
-      <Header>About</Header>
-      <Header2>Honest & Efficient Work</Header2>
+      <Header>
+        <Trans>About</Trans>
+      </Header>
+      <Header2>
+        <Trans>Honest & Efficient Work</Trans>
+      </Header2>
       <Paragraph>
-        Fast, efficient, and honest, estia städ has become a reputable and
-        well-known service provider. Our team is up for every job, managing
-        projects with the skill and experience our clients have come to expect.
-        We want our customers to be satisfied with our work, which is why we
-        provide open communication channels throughout the duration of each
-        project.
+        <Trans>
+          Fast, efficient, and honest, estia städ has become a reputable and
+          well-known service provider. Our team is up for every job, managing
+          projects with the skill and experience our clients have come to
+          expect. We want our customers to be satisfied with our work, which is
+          why we provide open communication channels throughout the duration of
+          each project.
+        </Trans>
       </Paragraph>
     </AboutSection>
-  )
-}
+  );
+};
 
-export default About
+export default About;

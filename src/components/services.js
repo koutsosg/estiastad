@@ -1,8 +1,8 @@
-import React from "react"
-import FloorClean from "../components/services/floor"
-import HouseClean from "../components/services/house"
-import WallClean from "../components/services/wall"
-import Head from "../components/services/head"
+import React from "react";
+import FloorClean from "../components/services/floor";
+import HouseClean from "../components/services/house";
+import WallClean from "../components/services/wall";
+import Head from "../components/services/head";
 
 const Services = () => {
   return (
@@ -12,6 +12,6 @@ const Services = () => {
       <FloorClean />
       <WallClean />
     </div>
-  )
-}
-export default Services
+  );
+};
+export default Services;

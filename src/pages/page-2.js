@@ -1,16 +1,24 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import {Link, useTranslation, Trans} from 'gatsby-plugin-react-i18next';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const SecondPage = (props) => {
+  const {t} = useTranslation();
+  return (
+    <Layout>
+      <SEO title={t('Page two')} />
+      <h1>
+        <Trans>Page two</Trans>
+      </h1>
+      <p>
+        <Trans>Welcome to page 2</Trans> ({props.path})
+      </p>
+      <Link to="/">
+        <Trans>Go back to the homepage</Trans>
+      </Link>
+    </Layout>
+  );
+};
 
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>test
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
-
-export default SecondPage
+export default SecondPage;

@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import WallImg from "../services/wall-img"
-
+import React from "react";
+import styled from "styled-components";
+import WallImg from "../services/wall-img";
+import { Trans } from "gatsby-plugin-react-i18next";
 const WallText = styled.div`
   background-color: #9a998e;
   width: 50%;
@@ -16,7 +16,7 @@ const WallText = styled.div`
     min-height: 100%;
     padding: 5% 0;
   }
-`
+`;
 
 const WallSection = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const WallSection = styled.div`
   @media (max-width: 768px) {
     padding: 1vh;
   }
-`
+`;
 
 const WallHeader = styled.h3`
 color: #ffffff;
@@ -37,7 +37,7 @@ padding: 0 0;
 @media (max-width: 768px) {
 font-size: 4.5vw;
 
-`
+`;
 const WallParagraph = styled.p`
   color: #ffffff;
   text-align: justify;
@@ -47,23 +47,28 @@ const WallParagraph = styled.p`
   @media (max-width: 768px) {
     font-size: 2.5vw;
   }
-`
+`;
 const WallClean = () => {
   return (
-    <WallSection>
+    <WallSection data-aos="fade-right">
       <div>
         <WallImg />
         <WallText>
-          <WallHeader>Wall Cleaning</WallHeader>
+          <WallHeader>
+            <Trans>Wall Cleaning</Trans>
+          </WallHeader>
+
           <WallParagraph>
-            estia städ is committed to getting the job done, especially when it
-            comes to this service. You can count on us to be professional,
-            timely, efficient and make sure you’re satisfied every step of the
-            way.
+            <Trans>
+              estia städ is committed to getting the job done, especially when
+              it comes to this service. You can count on us to be professional,
+              timely, efficient and make sure you’re satisfied every step of the
+              way.
+            </Trans>
           </WallParagraph>
         </WallText>
       </div>
     </WallSection>
-  )
-}
-export default WallClean
+  );
+};
+export default WallClean;

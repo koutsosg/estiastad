@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import HouseImg from "../services/house-img"
+import React from "react";
+import styled from "styled-components";
+import HouseImg from "../services/house-img";
 
 const HouseText = styled.div`
   background-color: #9a998e;
@@ -16,7 +16,7 @@ const HouseText = styled.div`
     min-height: 100%;
     padding: 5% 0;
   }
-`
+`;
 
 const HouseSection = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const HouseSection = styled.div`
   color: white;
   @media (max-width: 768px) {
   }
-`
+`;
 
 const HouseHeader = styled.h3`
 color: #ffffff;
@@ -36,7 +36,7 @@ padding: 0 0;
 @media (max-width: 768px) {
 font-size: 4.5vw;
 
-`
+`;
 const HouseParagraph = styled.p`
   color: #ffffff;
   text-align: justify;
@@ -46,10 +46,10 @@ const HouseParagraph = styled.p`
   @media (max-width: 768px) {
     font-size: 2.5vw;
   }
-`
+`;
 const HouseClean = () => {
   return (
-    <HouseSection>
+    <HouseSection data-aos="fade-right">
       <div>
         <HouseImg />
         <HouseText>
@@ -63,6 +63,6 @@ const HouseClean = () => {
         </HouseText>
       </div>
     </HouseSection>
-  )
-}
-export default HouseClean
+  );
+};
+export default HouseClean;

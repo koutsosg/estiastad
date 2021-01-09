@@ -1,10 +1,12 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faFortAwesome } from "@fortawesome/free-brands-svg-icons"
-import { faAt } from "@fortawesome/free-solid-svg-icons"
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons"
-import { faYoutube } from "@fortawesome/free-brands-svg-icons"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook /* faFortAwesome */,
+} from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+/* import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"; */
 
 const Social = () => {
   return (
@@ -69,6 +71,6 @@ const Social = () => {
           />
         </a> */}
     </div>
-  )
-}
-export default Social
+  );
+};
+export default Social;

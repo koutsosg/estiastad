@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import FloorImg from "../services/floor-img"
+import React from "react";
+import styled from "styled-components";
+import FloorImg from "../services/floor-img";
 
 const FloorText = styled.div`
   background-color: #9a998e;
@@ -16,7 +16,7 @@ const FloorText = styled.div`
     min-height: 100%;
     padding: 5% 0;
   }
-`
+`;
 
 const FloorSection = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const FloorSection = styled.div`
   @media (max-width: 768px) {
     padding: 1vh;
   }
-`
+`;
 
 const FloorHeader = styled.h3`
 color: #ffffff;
@@ -37,7 +37,7 @@ padding: 0 0;
 @media (max-width: 768px) {
 font-size: 4.5vw;
 
-`
+`;
 const FloorParagraph = styled.p`
   color: #ffffff;
   text-align: justify;
@@ -47,10 +47,10 @@ const FloorParagraph = styled.p`
   @media (max-width: 768px) {
     font-size: 2.5vw;
   }
-`
+`;
 const FloorClean = () => {
   return (
-    <FloorSection>
+    <FloorSection data-aos="fade-right">
       <div>
         <FloorImg />
         <FloorText>
@@ -64,6 +64,6 @@ const FloorClean = () => {
         </FloorText>
       </div>
     </FloorSection>
-  )
-}
-export default FloorClean
+  );
+};
+export default FloorClean;

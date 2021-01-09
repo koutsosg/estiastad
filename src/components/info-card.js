@@ -1,47 +1,47 @@
-import React from "react"
-import styled from "styled-components"
-import Social from "./social"
+import React from "react";
+import styled from "styled-components";
+import Social from "./social";
 const InfoContain = styled.div`
   background-color: #505554;
-`
+`;
 const InfoContain2 = styled.div`
   background-color: #505554;
   max-width: 100%;
-`
+`;
 
 const Front = styled.div`
   background-color: black;
   color: white;
-`
+`;
 const Test2 = styled.div`
   background-color: #9a998e;
   color: black;
-`
+`;
 
 const Testh3 = styled.div`
   position: absolute;
   bottom: 8px;
   left: 16px;
-`
+`;
 
 const Text = styled.p`
   @media (max-width: 768px) {
     font-size: 3vw;
     margin-bottom: 0px;
   }
-`
+`;
 const Tele = styled.a`
   @media (max-width: 768px) {
     font-size: 3vw;
     margin-bottom: 0px;
   }
-`
+`;
 const Title = styled.h3`
   @media (max-width: 768px) {
     font-size: 4vw;
     margin-top: 5%;
   }
-`
+`;
 
 const InfoCard = () => {
   return (
@@ -69,6 +69,6 @@ const InfoCard = () => {
         </div>
       </InfoContain2>
     </InfoContain>
-  )
-}
-export default InfoCard
+  );
+};
+export default InfoCard;

@@ -2,16 +2,16 @@
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./footer"
-import Header from "./header"
-import "./layout.css"
-import { CustomerChat } from "./customer-chat"
+import MessengerCustomerChat from "react-messenger-customer-chat";
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import Footer from "./footer";
+import Header from "./header";
+import "./layout.css";
+/* import { CustomerChat } from "./customer-chat"; */
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,32 +22,29 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+
       <div
         style={{
           margin: `0 auto`,
-       
-
         }}
       >
-
         <main>{children}</main>
-       
       </div>
 
-      <CustomerChat />
-     <Footer siteTitle={data.site.siteMetadata?.title || `Title`}/>
-     
+      {/*  <CustomerChat /> */}
+      <MessengerCustomerChat pageId="2106496549385767" />
+      <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
