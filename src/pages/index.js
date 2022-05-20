@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import About from "../components/about";
 import Welcome from "../components/welcome";
-import Services from "../components/services";
+import Services from "../components/Services";
 import InfoCard from "../components/info-card";
 
 import "aos/dist/aos.css"; // You can also use <link> for styles
